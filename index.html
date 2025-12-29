@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ajaz Shaikh | Al-Shifa Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold-text: #b08d57; --dark: #1a1a1a; }
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #333; user-select: none; }
+        
+        /* Background Leaf Overlay */
+        .page-bg {
+            background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), 
+                              url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .navbar { background: rgba(255,255,255,0.95); border-bottom: 1px solid #eee; padding: 15px 0; }
+        .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: 2px; }
+
+        .hero { padding: 80px 0 40px; text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 5px; }
+        .degrees { color: var(--gold-text); letter-spacing: 3px; font-weight: 300; margin-bottom: 15px; }
+        .rmo-list { font-size: 0.75rem; color: #777; text-transform: uppercase; letter-spacing: 1px; }
+
+        .feature-card {
+            background: rgba(255,255,255,0.9); border: 1px solid #eee; padding: 40px 25px;
+            text-align: center; transition: 0.3s; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+        .feature-card:hover { transform: translateY(-10px); border-color: var(--gold-text); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
+        .feature-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 15px; }
+
+        .contact-info { background: #fafafa; padding: 60px 0; border-top: 1px solid #eee; }
+        .btn-black { background: var(--dark); color: white; border-radius: 0; padding: 12px 30px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+<div class="page-bg">
+    <nav class="navbar sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="nav-logo">AL-SHIFA CLINIC</div>
+            <a href="booking.html" class="btn btn-black">Book Appointment</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="degrees">B.U.M.S., C.C.H., C.S.D.</div>
+            <h1>Dr. Ajaz Shaikh</h1>
+            <div class="rmo-list">
+                Ex-RMO: Noor Hospital | D.Y. Patil Hospital | Gymkhana Hospital
+            </div>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h3>Stamina & Vitality</h3>
+                    <p class="small text-muted">Specialized treatment for sexual weakness, lack of power, and energy restoration.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h3>Reproductive Health</h3>
+                    <p class="small text-muted">Expert care for male infertility, low sperm count, and related complications.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h3>Clinical Wellness</h3>
+                    <p class="small text-muted">Safe treatments for premature ejaculation, nightfall, and organ health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <h4 style="font-family: 'Playfair Display';">Clinic Location</h4>
+                    <p class="text-muted">112, Ground Floor, Jalal Manzil, Beside Kali Cut Hotel,<br>Nagpada, Mumbai - 400008</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 style="font-family: 'Playfair Display';">Contact Numbers</h4>
+                    <p class="text-muted">8779851649 / 9833123695</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    document.onkeydown = function(e) {
+        if(event.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || (e.ctrlKey && e.keyCode == 85)) return false;
+    };
+</script>
+</body>
+</html>
