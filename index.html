@@ -3,103 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ajaz Shaikh | Al-Shifa Clinic</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Dr. Salman Khan | Sexual Wellness Specialist (BUMS, Ex-RMO)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --gold-text: #b08d57; --dark: #1a1a1a; }
-        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #333; user-select: none; }
-        
-        /* Background Leaf Overlay */
-        .page-bg {
-            background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), 
-                              url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=2000&auto=format&fit=crop');
-            background-size: cover; background-position: center; background-attachment: fixed;
-            min-height: 100vh;
-        }
-
-        .navbar { background: rgba(255,255,255,0.95); border-bottom: 1px solid #eee; padding: 15px 0; }
-        .nav-logo { font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: 2px; }
-
-        .hero { padding: 80px 0 40px; text-align: center; }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin-bottom: 5px; }
-        .degrees { color: var(--gold-text); letter-spacing: 3px; font-weight: 300; margin-bottom: 15px; }
-        .rmo-list { font-size: 0.75rem; color: #777; text-transform: uppercase; letter-spacing: 1px; }
-
-        .feature-card {
-            background: rgba(255,255,255,0.9); border: 1px solid #eee; padding: 40px 25px;
-            text-align: center; transition: 0.3s; height: 100%; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
-        }
-        .feature-card:hover { transform: translateY(-10px); border-color: var(--gold-text); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
-        .feature-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 15px; }
-
-        .contact-info { background: #fafafa; padding: 60px 0; border-top: 1px solid #eee; }
-        .btn-black { background: var(--dark); color: white; border-radius: 0; padding: 12px 30px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; }
+        body { font-family: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .bg-unani-green { background-color: #2D4030; }
+        .text-unani-green { color: #2D4030; }
+        .bg-warm-sand { background-color: #F9F6F0; }
+        /* Safari smoothness fix */
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
     </style>
 </head>
-<body oncontextmenu="return false;">
+<body class="bg-warm-sand text-gray-800">
 
-<div class="page-bg">
-    <nav class="navbar sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="nav-logo">AL-SHIFA CLINIC</div>
-            <a href="booking.html" class="btn btn-black">Book Appointment</a>
+    <nav class="p-4 md:p-6 flex flex-col md:flex-row justify-between items-center bg-white shadow-sm sticky top-0 z-50">
+        <div class="text-xl md:text-2xl font-bold text-unani-green text-center md:text-left mb-4 md:mb-0">
+            Dr. Salman Khan <br class="md:hidden">
+            <span class="text-xs md:text-sm font-normal text-gray-500 block md:inline md:ml-2">BUMS, Ex-RMO</span>
+        </div>
+        <div class="flex space-x-4 md:space-x-6 text-sm md:text-base">
+            <a href="#home" class="hover:text-unani-green py-2">Home</a>
+            <a href="#about" class="hover:text-unani-green py-2">The Approach</a>
+            <a href="#consult" class="bg-unani-green text-white px-4 md:px-5 py-2 rounded-full hover:opacity-90 transition">Book Now</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <div class="degrees">B.U.M.S., C.C.H., C.S.D.</div>
-            <h1>Dr. Ajaz Shaikh</h1>
-            <div class="rmo-list">
-                Ex-RMO: Noor Hospital | D.Y. Patil Hospital | Gymkhana Hospital
+    <header id="home" class="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center">
+        <div class="max-w-3xl">
+            <div class="inline-block px-4 py-1 mb-4 border border-unani-green text-unani-green rounded-full text-sm font-bold">
+                Ex-Resident Medical Officer (RMO)
+            </div>
+            <h1 class="text-4xl md:text-6xl mb-6 text-unani-green leading-tight">Restore Your Vitality, Naturally.</h1>
+            <p class="text-lg mb-8 text-gray-600 leading-relaxed">Confidential, holistic, and root-cause based care for men's sexual wellness. Led by Dr. Salman Khan, combining clinical experience with the wisdom of Unani Medicine.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#consult" class="bg-unani-green text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg w-full md:w-auto">Start Your Private Consultation</a>
             </div>
         </div>
     </header>
 
-    <section class="container my-5">
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <h3>Stamina & Vitality</h3>
-                    <p class="small text-muted">Specialized treatment for sexual weakness, lack of power, and energy restoration.</p>
+    <section id="about" class="bg-white py-16 md:py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl text-center mb-12 text-unani-green font-bold">Specialized Care for Men's Health</h2>
+            <div class="grid md:grid-cols-3 gap-8 md:gap-10">
+                <div class="p-8 border border-gray-100 rounded-xl bg-warm-sand/30">
+                    <div class="text-3xl mb-4 text-orange-700 font-bold">01.</div>
+                    <h3 class="text-xl mb-3 font-bold">Performance Issues</h3>
+                    <p class="text-gray-600">Natural treatments for Erectile Dysfunction and Premature Ejaculation using time-tested herbal formulations.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <h3>Reproductive Health</h3>
-                    <p class="small text-muted">Expert care for male infertility, low sperm count, and related complications.</p>
+                <div class="p-8 border border-gray-100 rounded-xl bg-warm-sand/30">
+                    <div class="text-3xl mb-4 text-orange-700 font-bold">02.</div>
+                    <h3 class="text-xl mb-3 font-bold">Holistic Vitality</h3>
+                    <p class="text-gray-600">Addressing root causes like stress and metabolism through the clinical expertise of an experienced Ex-RMO.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-card">
-                    <h3>Clinical Wellness</h3>
-                    <p class="small text-muted">Safe treatments for premature ejaculation, nightfall, and organ health.</p>
+                <div class="p-8 border border-gray-100 rounded-xl bg-warm-sand/30">
+                    <div class="text-3xl mb-4 text-orange-700 font-bold">03.</div>
+                    <h3 class="text-xl mb-3 font-bold">Discreet Support</h3>
+                    <p class="text-gray-600">A community-focused approach where your identity and health concerns are kept strictly confidential.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact-info">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 mb-4">
-                    <h4 style="font-family: 'Playfair Display';">Clinic Location</h4>
-                    <p class="text-muted">112, Ground Floor, Jalal Manzil, Beside Kali Cut Hotel,<br>Nagpada, Mumbai - 400008</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 style="font-family: 'Playfair Display';">Contact Numbers</h4>
-                    <p class="text-muted">8779851649 / 9833123695</p>
-                </div>
+    <section id="consult" class="py-16 md:py-20 px-4 bg-warm-sand">
+        <div class="max-w-2xl mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl text-unani-green font-bold">Book a Private Consultation</h2>
+                <p class="text-gray-500 mt-2">Speak directly with Dr. Salman Khan. Your information is secure.</p>
             </div>
+            
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Name</label>
+                        <input type="text" required placeholder="Full Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 text-base">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2">Age</label>
+                        <input type="number" required placeholder="Years" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 text-base">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">Primary Concern</label>
+                    <select class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-800 text-base bg-white">
+                        <option>Erectile Dysfunction</option>
+                        <option>Premature Ejaculation</option>
+                        <option>Low Libido / Desire</option>
+                        <option>General Wellness/Vitality</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2">WhatsApp / Phone Number</label>
+                    <input type="tel" required placeholder="+91 00000 00000" class="w-full p-3 border rounded-lg text-base">
+                </div>
+
+                <div class="flex items-start space-x-3 bg-gray-50 p-3 rounded-lg border border-gray-100">
+                    <input type="checkbox" id="discreet" class="mt-1 w-5 h-5 accent-green-800">
+                    <label for="discreet" class="text-sm text-gray-600 leading-tight">I prefer a discreet callback (the doctor will call without mentioning the clinic name initially).</label>
+                </div>
+
+                <button type="submit" class="w-full bg-unani-green text-white py-4 rounded-lg font-bold hover:bg-opacity-90 transition shadow-lg text-lg">
+                    Request Secure Callback
+                </button>
+            </form>
         </div>
     </section>
-</div>
 
-<script>
-    document.onkeydown = function(e) {
-        if(event.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || (e.ctrlKey && e.keyCode == 85)) return false;
-    };
-</script>
+    <footer class="bg-unani-green text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-bold text-lg mb-1">Dr. Salman Khan</p>
+            <p class="text-sm opacity-80 mb-4">BUMS | Ex-Resident Medical Officer</p>
+            <p class="text-gray-400 text-xs italic max-w-lg mx-auto leading-relaxed">Disclaimer: Medical information provided is for educational purposes and does not replace a professional clinical diagnosis.</p>
+            <p class="mt-8 text-[10px] uppercase tracking-widest text-gray-500 font-bold">&copy; 2024 Dr. Salman Khan Wellness. Confidentiality Guaranteed.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
